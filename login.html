@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bus Booking</title>
+	<meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="home.css" />
+            <link href="bus_image/logo.png" rel="icon">
+            <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body vlink="green" alink="orange" >
+
+	<!--Header-->
+	<div style="background:#FDAD0D;width:100%;height:70px;">
+		<table border=0 bgcolor="#FDAD0D" width="100%" height="70"><!--Color is orange-->
+			<tr>
+				<td rowspan=2><a href="index.html"><img src="bus_image/hrj_logo.png"></a></td>
+			</tr>
+    	</table>
+    </div><!--End of Header-->
+
+     <div class="container-fluid">
+        <ul class="nav  nav-justified">
+            <li class="active"><a href="index.html"><b><font color="blue"  size="4">Home</font></b></a></li>
+            <li class="active"><a href="#"><b><font color="blue" size="4">Cancel Ticket</font></b></a></li>
+            <li class="active"><a href="#"><b><font color="blue" size="4">Print Ticket</font></b></a></li>
+            <li class="active"><a href="gallery.html"><b><font color="blue"  size="4">Gallery</font></b></a></li>
+            <li class="active"><a href="#"><b><font color="blue"  size="4">Contacts</font></b></a></li>
+            <li class="active"><a href="#"><b><font color="blue"  size="4">About Us</font></b></a></li>
+            <li class="active"><a href="#"><b><font color="blue"  size="4">Feedback</font></b></a></li>
+        </ul>
+    </div>
+    <!--Menu Bar Start-->
+
+	<!--green Image-->
+	<table  border="0" align="center" width="100%" cellpadding="2px">
+		<tr>
+			<td><img align="center" src="bus_image/24_online.PNG" width="100%" height="70px" ></td>
+		</tr>
+	</table><!--End of green image-->
+	<br>
+	<div style="width:100%;height:50px;background:#FBAC5D;border-radius:15px;">
+	<label style="font-size:25px;margin-top:8px;">Login</label>
+</div><br><br>
+
+	<form action="#" style="border:1px solid #ccc" name="form1">
+  <div class="container">
+    <h1>LOGIN</h1>
+    
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required="">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required="">
+
+    <span id="error" class="color"></span>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <div class="clearfix">
+       <a href="login.html"><button type="submit" class="signupbtn" onclick="return validation();">Login</button></a>
+       <a href="signin.html"><button type="button" class="cancelbtn">Sign-Up</button></a>
+    </div>
+  </div>
+</form>
+
+<!-- HTML Form -->
+
+<script type="text/javascript">
+// alert("dffsa");
+function validation()
+{
+
+if(document.form1.email.value=="")
+{
+document.getElementById("email").innerHTML="Enter your Name!";
+document.form1.email.focus();
+return false;
+}
+
+if(document.form1.password.value=="")
+{
+document.getElementById("error").innerHTML="Enter password";
+document.form1.password.focus();
+return false;
+}
+
+return true;
+}
+
+
+
+</script>
+<div class="" style="background:black;width:100%;height:70px;margin-top:30px;">
+	<table border="1" width="100%" bgcolor="black">
+		
+	 
+		<tr>
+			<td align=center><h5><font color="white"><a href="#">About Us</a>|
+						<a href="#">Schedules</a> | <a href ="#">Terms & Conditions</a> | 
+						<a href="#">Privacy Policy</a> | <a href="#">Contact Us</a> | 
+						<a href="#">Feedback</a> |<a href="#">News</a> |<a href="#"> FAQs</a> | 
+						<a href="#">Testimonials</a> | <a href="#">sitemap</a> |
+					<br>
+					<font>© 2020 All rights reserved.<a href="http://www.HRJtravel.com">http://www.HRJtravel.com
+			</td></a>
+		</tr>
+		
+	</table>
+	</div>
+
+
+</body>
+</html>
+
+<style type="text/css">
+	<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius:10px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius:10px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  width:50%;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+
+
+
+
